@@ -1,0 +1,162 @@
+{% extends 'store/base.html' %}
+{% load static %}
+
+
+{% block active1 %}class="nav-item"{% endblock active1 %}
+{% block active2 %}class="nav-item "{% endblock active2 %}
+{% block active3 %}class="nav-item "{% endblock active3 %}
+{% block active4 %}class="nav-item active"{% endblock active4 %}
+{% block content %}
+
+{% block banniere %}
+
+
+
+
+
+<section class="page-title bg-1">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block text-center">
+          <span class="text-white">Nos services</span>
+          <h1 class="text-capitalize mb-5 text-lg">Que faisons-nous ?</h1>
+
+          <!-- <ul class="list-inline breadcumb-nav">
+            <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+            <li class="list-inline-item"><span class="text-white">/</span></li>
+            <li class="list-inline-item"><a href="#" class="text-white-50">Our services</a></li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock banniere %}
+
+
+<section class="section service-2">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="department-block mb-5">
+					<img src="{% static 'store/images/bg/bulldo.jpg' %}" alt="" class="img-fluid">
+					<div class="content">
+						<h4 class="mt-4 mb-2 title-color">Freinage</h4>
+						<!-- <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p> -->
+						<li>Remplacement Plaquettes de Frein</li>
+						<li>	Remplacement Disques de Frein</li>
+						<li>	Remplacement Tambours de Frein</li>
+						<li>	Remplacement Etrier de Frein</li>
+						<li>	Remplacement Purge Liquide de Frein</li>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="department-block mb-5">
+					<img src="{% static 'store/images/bg/bulldo.jpg' %}" alt="" class="img-fluid">
+					<div class="content">
+						<h4 class="mt-4 mb-2  title-color">Entretien</h4>
+						<!-- <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p> -->
+						<li> Vidange et Remplacement Filtre à Huile</li>
+						<li>Révision générale 3 filtres</li>
+						<li>Remplacement Filtre à habitacle</li>
+						<li>Remplacement Bougies de Préchauffage</li>
+						<li>Remplacement Bougies de Allumage</li>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="department-block mb-5">
+					<img src="{% static 'store/images/bg/bulldo.jpg' %}" alt="" class="img-fluid">
+					<div class="content">
+						<h4 class="mt-4 mb-2 title-color">Moteur</h4>
+						<!-- <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p> -->
+						<li>Remplacement Courroie Distribution</li>
+						<li>Remplacement Turbo</li>
+						<li>Remplacement Injecteurs						</li>
+						<li>Remplacement Courroie d’accessoires						</li>
+						<li>Remplacement Débitmetre						</li>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="department-block mb-5 mb-lg-0">
+					<img src="{% static 'store/images/bg/bulldo.jpg' %}" alt="" class="img-fluid">
+					<div class="content">
+						<h4 class="mt-4 mb-2 title-color">Transmission</h4>
+						<!-- <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p> -->
+					<li>Purge boite de vitesse manuelle ou automatique</li>
+					<li>Remplacement boite de vitesse
+					</li>
+					<li>Remplacement arbre de transmission
+					</li>
+					<li>Remplacement cardan
+					</li>
+					<li>Remplacement soufflet de cardan
+					</li>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="department-block mb-5 mb-lg-0">
+					<img src="{% static 'store/images/bg/bulldo.jpg' %}" alt="" class="img-fluid">
+					<div class="content">
+						<h4 class="mt-4 mb-2 title-color">Direction / Suspension</h4>
+						<!-- <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p> -->
+					<li>Remplacement amortisseurs
+					</li>
+					<li>Remplacement biellette direction et suspension</li>
+					<li>Remplacement triangles de suspension
+					</li>
+					<li>Remplacement rotules de direction
+					</li>
+					<li>Remplacement crémaillère
+					</li>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="department-block mb-5 mb-lg-0">
+					<img src="{% static 'store/images/bg/bulldo.jpg' %}" alt="" class="img-fluid">
+					<div class="content">
+						<h4 class="mt-4 mb-2 title-color">Carrosserie</h4>
+						<!-- <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p> -->
+					<li>Constat
+					</li>
+					<li>Peinture 1 élément
+					</li>
+					<li>Débosselage
+					</li>
+					<li>Lustrage
+					</li>
+					<li>Parebrises</li>
+					<li>Peinture véhicule complet
+					</li>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section cta-page">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-7">
+				<div class="cta-content">
+					<div class="divider mb-4"></div>
+					<h2 class="mb-5 text-lg text-white">Nous sommes ravis de vous servir <span class="text-danger">les meilleurs offres du marché</span></h2>
+					<a href="{% url 'reserver' %}" class=" btn-main-2 btn-icon btn-round-full " style="padding: 20px;">Réservez un service<i class="icofont-simple-right  ml-2"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock content %}

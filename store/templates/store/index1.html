@@ -1,0 +1,679 @@
+{% extends 'store/base.html' %}
+{% load static %}
+
+{% block content %}
+
+{% block banniere %}
+<!-- Slider Start -->
+<section class="banner">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-12 col-xl-7">
+				<div class="block">
+					<div class="divider mb-3"></div>
+					<span class="text-uppercase text-sm letter-spacing ">La technicité à l'etat pur</span>
+					<h1 class="mb-3 mt-3">Garage Maurice</h1>
+					<h3 class="text-primary">Mécanique</h3>
+					<h3 class="text-primary">Vente de Véhicules</h3>
+					<h3 class="text-primary">Transport et manutention</h3>
+					<h3 class="text-primary">Gros chantiers BTP</h3>
+					<p class="mb-4 pr-5">A repudiandae ipsam labore ipsa voluptatum quidem quae laudantium quisquam aperiam maiores sunt fugit, deserunt rem suscipit placeat.</p>
+					<div class="btn-container ">
+						<a href="{% url 'reserver' %}"  class=" btn-main-2 btn-icon btn-round-full " style="padding: 20px; border: none;">Réservez un service<i class="icofont-simple-right ml-2  "></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock banniere %}
+
+{% block caroussel %}
+<section class="features">
+	<div class="container">
+
+
+        <div id="carouselMultiItemExample" class="carousel slide carousel-dark "
+				data-mdb-ride="carousel">
+				<!-- Controls -->
+				<div class="d-flex justify-content-center mb-4">
+					<button class="carousel-control-prev position-relative" type="button"
+						data-mdb-target="#carouselMultiItemExample" data-mdb-slide="prev" style="border-radius: 45px; background-color: #e12454; color: white; width: 40px;">
+						<!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                        <i class="fa-solid fa-chevron-left"></i>
+						<!-- <span class="visually-hidden">Previous</span> -->
+					</button> &nbsp;&nbsp;&nbsp;&nbsp;
+					<button class="carousel-control-next position-relative" type="button"
+						data-mdb-target="#carouselMultiItemExample" data-mdb-slide="next" style="border-radius: 45px; background-color: #e12454; color: white; width: 40px;">
+						<!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                        <i class="fa-solid fa-chevron-right"></i>
+						<!-- <span class="visually-hidden">Next</span> -->
+					</button>
+				</div>
+
+
+				<!-- Inner -->
+				<div class="carousel-inner py-4">
+					<!-- Single item -->
+					<div class="carousel-item active">
+						<div class="container">
+							<div class="row">
+
+								<div class="col-lg-12">
+									<div class="feature-block d-lg-flex">
+										<div class="feature-item mb-5 mb-lg-0">
+											<div class="feature-icon mb-4">
+												<i class="icofont-surgeon-alt"></i>
+											</div>
+											<span>FREINAGE
+												<span class="badge bg-danger w-5">50€</span>
+											</span>
+											<h4 class="mb-3">Online Appoinment</h4>
+											<p class="mb-2">
+											<ul class="list-unstyled">
+												<li>Remplacement Plaquettes de Frein</li>
+												<li>Remplacement Disques de Frein</li>
+												<li>Remplacement Tambours de Frein</li>
+												<li>Remplacement Etrier de Frein</li>
+												<li>Remplacement Purge Liquide de Frein</li>
+											</ul>
+											</p>
+											<a href="appoinment.html" class="btn btn-main btn-round-full">Make a
+												appoinment</a>
+										</div>
+
+										<div class="feature-item mb-5 mb-lg-0">
+											<div class="feature-icon mb-4">
+												<i class="icofont-ui-clock"></i>
+											</div>
+											<span>ENTRETIEN
+												<span class="badge bg-danger w-5">50€</span>
+											</span>
+											<h4 class="mb-3">Working Hours</h4>
+											<!-- <ul class="w-hours list-unstyled"> -->
+												<ul class="list-unstyled">
+													<li>Vidange et Remplacement Filtre à Huile</li>
+													<li>Révision générale 3 filtres</li>
+													<li>Remplacement Filtre à habitacle</li>
+													<li>Remplacement Bougies de Préchauffage</li>
+													<li>Remplacement Bougies de Allumage</li>
+												</ul>
+											<!-- </ul> -->
+										</div>
+
+										<div class="feature-item mb-5 mb-lg-0">
+											<div class="feature-icon mb-4">
+												<i class="icofont-support"></i>
+											</div>
+											<span>MOTEUR
+												<span class="badge bg-danger w-5">50€</span>
+											</span>
+											<h4 class="mb-3">1-800-700-6200</h4>
+											<p>
+												<ul class="list-unstyled">
+													<li>Remplacement Courroie Distribution</li>
+													<li>Remplacement Turbo</li>
+													<li>Remplacement Injecteurs</li>
+													<li>Remplacement Courroie d’accessoires</li>
+													<li>Remplacement Débitmetre</li>
+												</ul>
+											</p>
+										</div>
+									</div>
+								</div>
+
+
+
+							</div>
+						</div>
+					</div>
+
+					<!-- Single item -->
+					<div class="carousel-item">
+						<div class="container">
+							<div class="row">
+
+
+								<div class="col-lg-12">
+									<div class="feature-block d-lg-flex">
+										<div class="feature-item mb-5 mb-lg-0">
+											<div class="feature-icon mb-4">
+												<i class="icofont-surgeon-alt"></i>
+											</div>
+											<span>TRANSMISSION
+												<span class="badge bg-danger w-5">50€</span>
+											</span>
+											<h4 class="mb-3">Online Appoinment</h4>
+											<p class="mb-4">
+												<ul class="list-unstyled">
+													<li>Purge boite de vitesse manuelle ou automatique</li>
+													<li>Remplacement boite de vitesse</li>
+													<li>Remplacement arbre de transmission</li>
+													<li>Remplacement cardan</li>
+													<li>Remplacement soufflet de cardan</li>
+												</ul>
+											</p>
+											<a href="appoinment.html" class="btn btn-main btn-round-full">Make a
+												appoinment</a>
+										</div>
+
+										<div class="feature-item mb-5 mb-lg-0">
+											<div class="feature-icon mb-4">
+												<i class="icofont-ui-clock"></i>
+											</div>
+											<span>DIRECTION / SUSPENSION
+												<span class="badge bg-danger w-5">50€</span>
+											</span>
+											<h4 class="mb-3">Working Hours</h4>
+											<ul class="list-unstyled">
+												<li>Remplacement amortisseurs</li>
+												<li>Remplacement biellette direction et suspension</li>
+												<li>Remplacement triangles de suspension</li>
+												<li>Remplacement rotules de direction</li>
+												<li>Remplacement crémaillère</li>
+											</ul>
+										</div>
+
+										<div class="feature-item mb-5 mb-lg-0">
+											<div class="feature-icon mb-4">
+												<i class="icofont-support"></i>
+											</div>
+											<span>CAROSSERIE
+												<span class="badge bg-danger w-5">50€</span>
+											</span>
+											<h4 class="mb-3">1-800-700-6200</h4>
+											<p>
+												<ul class="list-unstyled">
+													<li>Constat</li>
+													<li>Peinture 1 élément</li>
+													<li>Débosselage</li>
+													<li>Lustrage</li>
+													<li>Parebrises</li>
+													<li>Peinture véhicule complet</li>
+												</ul>
+											</p>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+
+		<!-- <div class="row">
+			<div class="col-lg-12">
+				<div class="feature-block d-lg-flex">
+					<div class="feature-item mb-5 mb-lg-0">
+						<div class="feature-icon mb-4">
+							<i class="icofont-surgeon-alt"></i>
+						</div>
+						<span>24 Hours Service</span>
+						<h4 class="mb-3">Online Appoinment</h4>
+						<p class="mb-4">Get ALl time support for emergency.We have introduced the principle of family medicine.</p>
+						<a href="appoinment.html" class="btn btn-main btn-round-full">Make a appoinment</a>
+					</div>
+				
+					<div class="feature-item mb-5 mb-lg-0">
+						<div class="feature-icon mb-4">
+							<i class="icofont-ui-clock"></i>
+						</div>
+						<span>Timing schedule</span>
+						<h4 class="mb-3">Working Hours</h4>
+						<ul class="w-hours list-unstyled">
+							<li class="d-flex justify-content-between">Sun - Wed : <span>8:00 - 17:00</span></li>
+							<li class="d-flex justify-content-between">Thu - Fri : <span>9:00 - 17:00</span></li>
+							<li class="d-flex justify-content-between">Sat - sun : <span>10:00 - 17:00</span></li>
+						</ul>
+					</div>
+				
+					<div class="feature-item mb-5 mb-lg-0">
+						<div class="feature-icon mb-4">
+							<i class="icofont-support"></i>
+						</div>
+						<span>Emegency Cases</span>
+						<h4 class="mb-3">1-800-700-6200</h4>
+						<p>Get ALl time support for emergency.We have introduced the principle of family medicine.Get Conneted with us for any urgency .</p>
+					</div>
+				</div>
+			</div>
+		</div> -->
+	</div>
+</section>
+{% endblock caroussel %}
+
+
+
+<section class="section about">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-4 col-sm-6">
+				<div class="about-img">
+					<img src="{% static 'store/images/service/clés.jpg' %}" alt="" class="img-fluid">
+					<img src="{%  static 'store/images/service/man.jpg' %}" alt="" class="img-fluid mt-4">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="about-img mt-4 mt-lg-0">
+					<img src="{% static 'store/images/service/meca.png' %}" alt="" class="img-fluid">
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="about-content pl-4 mt-4 mt-lg-0">
+					<h2 class="title-color">Nous sommes les meilleurs dans notre domaine</h2>
+					<p class="mt-4 mb-5">Nous disposons d'une cabine de carrosserie dernière génération ainsi que 3 ponts et de tout le matériel pour le diagnostic électrique et éléctronique de votre véhicule.</p>
+
+					<a href="service.html" class="btn btn-main-2 btn-round-full btn-icon">Services<i class="icofont-simple-right ml-3"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="cta-section ">
+	<div class="container">
+		<div class="cta position-relative">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="counter-stat">
+						<i class="icofont-doctor"></i>
+						<span class="h3 counter" data-count="327">0</span>k
+						<p>Clients Satisfaits</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="counter-stat">
+						<i class="icofont-flag"></i>
+						<span class="h3 counter" data-count="12">0</span>+
+						<p>Mois de garantie</p>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="counter-stat">
+						<i class="icofont-badge"></i>
+						<span class="h3 counter" data-count="08">0</span>+
+						<p>Chantiers en cours</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="counter-stat">
+						<i class="icofont-globe"></i>
+						<span class="h3 counter" data-count="20">0</span>
+						<p>Filiales</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section service gray-bg">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-7 text-center">
+				<div class="section-title">
+					<h2>Nos Services</h2>
+					<div class="divider mx-auto my-4"></div>
+					<p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="service-item mb-4" style="height: 300px;overflow-y: scroll;">
+					<div class="icon d-flex align-items-center">
+						<i class="fa-solid fa-truck-ramp-box fs-1"></i>
+						<h4 class="mt-3 mb-3">Transport et manutention
+                        </h4>
+					</div>
+
+					<div class="content">
+						<p class="mb-4" >Depuis 2013, le Groupe BATAIL se développe activement 
+                            dans le transport industriel en misant sur le sur-mesure et l’exceptionnel,
+                             avec chariot ou avec grue. Le cœur de notre métier est de concevoir des 
+                             solutions innovantes et ultra-adaptées aux besoins spécifiques de nos clients.
+                            Transport industriel Notre parc et notre savoir-faire nous permettent de répondre 
+                            à l’ensemble des problématiques de transports exceptionnels sur la France</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="service-item mb-4" style="height: 300px;overflow-y: scroll;">
+					<div class="icon d-flex align-items-center">
+						<i class="fa-solid fa-truck fs-1"></i>
+						<h4 class="mt-3 mb-3">Livraison aux particuliers</h4>
+					</div>
+					<div class="content">
+						<p class="mb-4">Une livraison en toute sécurité, au plus proche des lieux de
+                             chargement et de pose grâce à des conducteurs experts et une flotte de
+                              véhicules équipés de chariots embarqués. Une livraison en toute réactivité,
+                               à travers un maillage national en régions constitué de plates-formes relais
+                                pour des délais rapides.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="service-item mb-4 " style="height: 300px;overflow-y: scroll;">
+					<div class="icon d-flex align-items-center">
+						<i class="fa-solid fa-tractor fs-1"></i>
+						<h4 class="mt-3 mb-3">Transport de materiel et machines agricoles</h4>
+					</div>
+					<div class="content">
+						<p class="mb-4">BATAIL Transports a développé un savoir-faire unique dans le 
+                            transport agricole. Le site de Mamers (proximité de la région parisienne) 
+                            vous propose 2 parcs de stockage (soit 38 000 m2) en extérieur pour votre matériel agricole.</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="service-item mb-4" style="height: 300px;overflow-y: scroll;">
+					<div class="icon d-flex align-items-center">
+						<i class="fa-solid fa-city fs-1"></i>
+						<h4 class="mt-3 mb-3">Livraison directe aux chantiers et magasins</h4>
+					</div>
+
+					<div class="content">
+						<p class="mb-4">Une livraison en toute sécurité, grâce à des conducteurs 
+                            experts et une flotte de véhicules équipés de chariots embarqués.
+                             Une livraison en toute réactivité, à travers un maillage national 
+                             en régions constitué de plates-formes relais (proches des grandes agglomérations pour des délais rapides).</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="service-item mb-4" style="height: 300px;overflow-y: scroll;">
+					<div class="icon d-flex align-items-center">
+						<i class="fa-solid fa-gifts fs-1"></i>
+						<h4 class="mt-3 mb-3">Transport de lots partiels et complets</h4>
+					</div>
+					<div class="content">
+						<p class="mb-4">
+                            Une livraison sur-mesure, grâce à une équipe experte et à une flotte
+                             de véhicules adaptés à vos besoins, selon votre marchandise. 
+                             Une livraison en toute réactivité, à travers un maillage national et européen.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="service-item mb-4" style="height: 300px; overflow-y: auto;">
+					<div class="icon d-flex align-items-center">
+						<i class="fa-solid fa-tree fs-1"></i>
+						<h4 class="mt-3 mb-3">Transport de bois</h4>
+					</div>
+					<div class="content">
+						<p class="mb-4">Depuis plus de 50 ans, les Transports BATAIL,
+                             sont spécialisés dans les domaines industriels, forestiers, 
+                             transports de matériaux pour les travaux publics, bois-énergie,
+                              agro-alimentaires et tractions de conteneurs maritimes.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section appoinment">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-6 ">
+				<div class="appoinment-content">
+					<img src="{% static 'store/images/service/man.jpg' %}" alt="" class="img-fluid" style="height: 600px;">
+					<div class="emergency">
+						<h2 class="text-lg"><i class="icofont-phone-circle text-lg"></i>+23 345 67980</h2>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-10 ">
+				<div class="appoinment-wrap mt-5 mt-lg-0">
+					<h2 class="mb-2 title-color">Demander un Devis</h2>
+					<p class="mb-4">Mollitia dicta commodi est recusandae iste, natus eum asperiores corrupti qui velit . Iste dolorum atque similique praesentium soluta.</p>
+					     <form id="#" class="appoinment-form" method="post" action="#">
+                    <div class="row">
+                         <div class="col-lg-6">
+                            <div class="form-group">
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>Choose Department</option>
+                                  <option>Software Design</option>
+                                  <option>Development cycle</option>
+                                  <option>Software Development</option>
+                                  <option>Maintenance</option>
+                                  <option>Process Query</option>
+                                  <option>Cost and Duration</option>
+                                  <option>Modal Delivery</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <select class="form-control" id="exampleFormControlSelect2">
+                                  <option>Select Doctors</option>
+                                  <option>Software Design</option>
+                                  <option>Development cycle</option>
+                                  <option>Software Development</option>
+                                  <option>Maintenance</option>
+                                  <option>Process Query</option>
+                                  <option>Cost and Duration</option>
+                                  <option>Modal Delivery</option>
+                                </select>
+                            </div>
+                        </div>
+
+                         <div class="col-lg-6">
+                            <div class="form-group">
+                                <input name="date" id="date" type="text" class="form-control" placeholder="dd/mm/yyyy">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <input name="time" id="time" type="text" class="form-control" placeholder="Time">
+                            </div>
+                        </div>
+                         <div class="col-lg-6">
+                            <div class="form-group">
+                                <input name="name" id="name" type="text" class="form-control" placeholder="Full Name">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <input name="phone" id="phone" type="Number" class="form-control" placeholder="Phone Number">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group-2 mb-4">
+                        <textarea name="message" id="message" class="form-control" rows="6" placeholder="Your Message"></textarea>
+                    </div>
+
+                    <a class="btn btn-main btn-round-full" href="appoinment.html" >Make Appoinment <i class="icofont-simple-right ml-2  "></i></a>
+                </form>
+            </div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section testimonial-2 gray-bg">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-7">
+				<div class="section-title text-center">
+					<h2>Plus de 5000 clients dans le monde</h2>
+					<div class="divider mx-auto my-4"></div>
+					<p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-12 testimonial-wrap-2">
+				<div class="testimonial-block style-2  gray-bg">
+					<i class="icofont-quote-right"></i>
+
+					<div class="testimonial-thumb">
+						<img src="images/team/test-thumb1.jpg" alt="" class="img-fluid">
+					</div>
+
+					<div class="client-info ">
+						<h4>Amazing service!</h4>
+						<span>JENNIFER HULMAN</span>
+						<p>
+							C’est ma 4ème visite dans ce garage et tout ce que je peux dire est : 
+							j’adore vraiment je ne réfléchis pas à deux fois avant d’ envoyé mon véhicule
+							 que ce soit au niveau des prix, du professionnalisme , des conseil, de l’accueil,
+							  du bon travail effectué sur ma voiture. Tout dans ce garage est bien, je le 
+							  recommande vivement.						</p>
+					</div>
+				</div>
+
+				<div class="testimonial-block style-2  gray-bg">
+					<div class="testimonial-thumb">
+						<img src="images/team/test-thumb2.jpg" alt="" class="img-fluid">
+					</div>
+
+					<div class="client-info">
+						<h4>Prestation de qualité!</h4>
+						<span>EMEUH COSTA</span>
+						<p>
+			Professionnalisme, Qualité, Rapport-Qualité-prix. Distribution et Vidange ont et faites dans ce garage.
+				Très bon accueil , équipe sympathique, travail pro et très bonne finition. Je recommande						</p>
+					</div>
+					
+					<i class="icofont-quote-right"></i>
+				</div>
+
+				<!-- <div class="testimonial-block style-2  gray-bg">
+					<div class="testimonial-thumb">
+						<img src="images/team/test-thumb3.jpg" alt="" class="img-fluid">
+					</div>
+
+					<div class="client-info">
+						<h4>Good Support!</h4>
+						<span>Kolis Mullar</span>
+						<p>
+							They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
+						</p>
+					</div>
+					
+					<i class="icofont-quote-right"></i>
+				</div>
+
+				<div class="testimonial-block style-2  gray-bg">
+					<div class="testimonial-thumb">
+						<img src="images/team/test-thumb4.jpg" alt="" class="img-fluid">
+					</div>
+
+					<div class="client-info">
+						<h4>Nice Environment!</h4>
+						<span>Partho Sarothi</span>
+						<p class="mt-4">
+							They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
+						</p>
+					</div>
+					<i class="icofont-quote-right"></i>
+				</div>
+
+				<div class="testimonial-block style-2  gray-bg">
+					<div class="testimonial-thumb">
+						<img src="images/team/test-thumb1.jpg" alt="" class="img-fluid">
+					</div>
+
+					<div class="client-info">
+						<h4>Modern Service!</h4>
+						<span>Kolis Mullar</span>
+						<p>
+							They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
+						</p>
+					</div>
+					<i class="icofont-quote-right"></i>
+				</div> -->
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section clients">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-7">
+				<div class="section-title text-center">
+					<h2>Partners who support us</h2>
+					<div class="divider mx-auto my-4"></div>
+					<p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row clients-logo">
+			<div class="col-lg-2">
+				<div class="client-thumb">
+					<img src="images/about/1.png" alt="" class="img-fluid">
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="client-thumb">
+					<img src="images/about/2.png" alt="" class="img-fluid">
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="client-thumb">
+					<img src="images/about/3.png" alt="" class="img-fluid">
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="client-thumb">
+					<img src="images/about/4.png" alt="" class="img-fluid">
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="client-thumb">
+					<img src="images/about/5.png" alt="" class="img-fluid">
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="client-thumb">
+					<img src="images/about/6.png" alt="" class="img-fluid">
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="client-thumb">
+					<img src="images/about/3.png" alt="" class="img-fluid">
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="client-thumb">
+					<img src="images/about/4.png" alt="" class="img-fluid">
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="client-thumb">
+					<img src="images/about/5.png" alt="" class="img-fluid">
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="client-thumb">
+					<img src="images/about/6.png" alt="" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock content %}
